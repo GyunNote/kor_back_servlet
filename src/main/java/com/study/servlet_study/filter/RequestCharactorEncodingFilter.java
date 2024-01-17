@@ -30,7 +30,7 @@ public class RequestCharactorEncodingFilter extends HttpFilter implements Filter
 		
 		String[] methods = new String[] {"POST","PUT"};
 
-		System.out.println(httpRequest.getMethod());    //getMethod 에 어떤게 있는지 확인용 이거랑 밑의 asList에서 받는 게 같으면 utf-8을 실행한다
+		// System.out.println(httpRequest.getMethod());    //getMethod 에 어떤게 있는지 확인용 이거랑 밑의 asList에서 받는 게 같으면 utf-8을 실행한다
 		
 		if(Arrays.asList(methods).contains(httpRequest.getMethod().toUpperCase())){
 			
